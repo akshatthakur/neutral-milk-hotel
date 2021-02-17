@@ -20,8 +20,8 @@ library(highcharter)
 library(wordcloud)
 
 # using my personal API authentication details
-Sys.setenv(SPOTIFY_CLIENT_ID = '22fe4d31b88044ceb0f550d7f9c5e04e')
-Sys.setenv(SPOTIFY_CLIENT_SECRET = 'c97f7d86989847abb20184bf4facfd8c')
+Sys.setenv(SPOTIFY_CLIENT_ID = 'xxx')
+Sys.setenv(SPOTIFY_CLIENT_SECRET = 'xxx')
 
 
 # pulling audio features for NMH's entire catalogue on Spotify
@@ -31,7 +31,7 @@ nmh_data <- subset(nmh_data, track_name!="A Baby For Pree")
 str(nmh_data)
 
 # Similar to with Spotify, I first used the search API call to get the artist_id.
-token <- 'GFE_2Z15PPtLb_1RWwbhUI0-zK-htK7hn_8sypnsCkcJevDmVQmkT3Lo2_YUhdR6'
+token <- 'xxx'
 
 genius_get_artists <- function(artist_name, n_results = 10) {
   baseURL <- 'https://api.genius.com/search?q='
