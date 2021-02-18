@@ -66,10 +66,6 @@ library(spotifyr)
 
 Use your API authentication details.
 
-```{r echo=FALSE}
-Sys.setenv(SPOTIFY_CLIENT_ID = '22fe4d31b88044ceb0f550d7f9c5e04e')
-Sys.setenv(SPOTIFY_CLIENT_SECRET = 'c97f7d86989847abb20184bf4facfd8c')
-```
 
 ```{r eval=FALSE}
 Sys.setenv(SPOTIFY_CLIENT_ID = 'your id here')
@@ -94,9 +90,6 @@ I didn't have to use any specific package to do this. I just used the search API
 token <- 'your token here'
 ```
 
-```{r echo=FALSE}
-token <- 'GFE_2Z15PPtLb_1RWwbhUI0-zK-htK7hn_8sypnsCkcJevDmVQmkT3Lo2_YUhdR6'
-```
 
 ```{r }
 genius_get_artists <- function(artist_name, n_results = 10) {
